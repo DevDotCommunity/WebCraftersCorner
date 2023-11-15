@@ -1,0 +1,52 @@
+<!-- Add hover effects to the navigation menu links from Day 4. Change the link color or background color on hover. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px #000;
+            overflow: none;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5vh 0 0;
+            /* margin-right: 5vh; */
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Nav Icon</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
