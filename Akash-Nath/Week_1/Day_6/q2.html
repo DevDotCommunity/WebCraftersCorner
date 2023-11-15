@@ -1,0 +1,37 @@
+<!-- Create a CSS class that adds a border around an element and apply it to your form fields. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            width: 100%;
+        }
+        .form-element {
+            width: 50%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration of Agreement of Slavery :)</h1>
+    <form action="/post">
+        <input type="text" name="userName" id="userName" placeholder="Enter Name." class="form-element">
+        <input type="email" name="userEmail" id="userEmail" placeholder="Enter Email" class="form-element">
+        <input type="submit" value="Register" class="form-element">
+    </form>
+    <h2>I know it's a bit odd to place an email field for Registration of Agreement of Slavery, but ultimately we do work for others, in other word we do slavery. :)</h2>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Use CSS to center-align the image within its container. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple page</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="dev.png" alt="Dev Icon">
+    </div>
+</body>
+</html>
