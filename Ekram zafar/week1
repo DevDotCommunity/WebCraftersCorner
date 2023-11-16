@@ -1,0 +1,15 @@
+# week 1
+## Day 1 (HTML Basics)
+<html>
+<head>
+    <title>my simple HTML page</title>
+</head>
+<body>
+    <h1>welcome to my simple HTML page</h1>
+    <p>This is a paragraph of text that explains what this page is about. I am using HTML tags to create different elements on
+ the page, such as headings, paragraphs, and
+ images.</p>
+    <img src="my_image.jpg" alt="An image of a flower" width="300" height="200">
+</body>
+
+</html>
