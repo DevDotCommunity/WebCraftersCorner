@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <html lang='"en">
+  <head>
+<meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale="1 .0">
+  <title>Welcome to My page</title>
+  </head>
+  <body>
+  <h1>My Simple Page</h1>
+  <p>This is a simple html page </p>
+  <img
+  src="pexels-pixabay-50594.jpg"
+
+  </body>
+  </html>
