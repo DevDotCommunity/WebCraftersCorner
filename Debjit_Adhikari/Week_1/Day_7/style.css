@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(45deg,grey,rgba(240, 240, 121, 0.637),pink,darkgray,pink,rgba(230, 230, 110, 0.763));
+}
+h1{
+    font-weight: bold;
+    
+}
+img{
+    height: 300px;
+    width: 250px;
+    margin-left: 25%;
+    border: 2px solid goldenrod;
+}
+h2{
+    font-weight: 200px;
+    color: brown;
+    font-family: "Playfair Display";
+}
+p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style:italic;
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+}
+form{
+    margin-left: 20px;
+    
+}
+#name{
+    margin-bottom:5px;
+
+}
+label{
+    font-size: 20px;
+
+}
+button{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    border:1px solid;
+}
+
+a:hover{
+    color:white;
+    font-size: 23px;
+    background-color:grey;
+    text-decoration: none;
+}
+button:hover{
+    background-color:gray;
+    height:25px;
+    width: 67px;
+    color:aliceblue;
+    border: 1px solid black
+}
