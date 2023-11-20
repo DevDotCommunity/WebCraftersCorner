@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient(45deg,rgb(167, 245, 167),rgb(164, 226, 250));
+}
+h1{
+    color: red;
+    text-shadow: 0 0 20px blue,0 0 20px violet;
+    
+}
+p{
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 20px red;
+}
+.vitamin{
+    color:blue;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ol{
+    color: red;
+    font-style: italic;
+}
