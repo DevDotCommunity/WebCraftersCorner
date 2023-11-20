@@ -1,0 +1,28 @@
+form{
+   background-color: lightskyblue;
+   display: block;
+   width: 50%;
+   margin: auto;
+   border: 2px solid blue;
+   padding: 50px;
+   padding-top: 20px;
+}
+ 
+h1{
+   background-color: aqua;
+   color: blue;
+   text-align: center;
+   border: 1px solid blue;
+}
+.data_input{
+   border: 1px solid blue;
+}
+
+button{
+   color: blue;
+   background-color: aqua;
+   border: 1px solid blue;
+}
+label{
+   color: blue;
+}
