@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the navigation menu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+        /* Sub-menu styling */
+        ul ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            border: 1px solid #555;
+            z-index: 1;
+        }
+
+        ul li:hover > ul {
+            display: inherit;
+        }
+
+        ul ul li {
+            float: none;
+            border-top: 1px solid #555;
+        }
+
+        ul ul li a {
+            padding: 12px 16px;
+            color: white;
+        }
+
+        ul ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
