@@ -1,0 +1,22 @@
+body {
+  background-color: #4c4949;
+  color: #d3cccc;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  color: #009688;
+}
+
+p {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
