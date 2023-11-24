@@ -1,0 +1,25 @@
+img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+h1{
+   background-color: aqua;
+   color: blue;
+   text-align: center;
+   padding: 20px;
+   margin: 8px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 20px;
+    font-family: arial;
+}
+
+body{
+    margin: auto;
+    padding: 20px;
+    background-color:#f6eff1 ;
+}

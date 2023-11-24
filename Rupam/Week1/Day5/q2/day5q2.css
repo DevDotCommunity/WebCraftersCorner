@@ -1,0 +1,23 @@
+h1{
+   background-color: #ac92eb;
+   text-align: center;
+   color: #8c12fb;
+   font-style: initial;
+   padding: 20px;
+   margin: 5px;
+}   
+
+h2{
+    background-color: #a0d568;
+    font-style: inherit;
+}
+
+p{
+  color: #ed5564;
+  font-style: italic;
+}
+
+ul{
+    color: #ed5564;
+    font-style: oblique;
+}
