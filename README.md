@@ -102,6 +102,7 @@ Your_Name/
 The practice problems are available in `Questions` folder.
 
 [Click here](Questions/Week1.md) for the Questions of Week1.
+[Click here](Questions/Week2.md) for the Questions of Week2.
 
 The folder follows the following structure:
 
