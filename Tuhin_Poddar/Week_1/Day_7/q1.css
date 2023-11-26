@@ -1,0 +1,62 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #0066cc;
+}
+
+p {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li:hover {
+  background-color: #ddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid #666;
+  padding: 8px;
+  text-align: left;
+}
+
+.bordered {
+  border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  border: 1px solid #999;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
