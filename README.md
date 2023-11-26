@@ -61,6 +61,26 @@ We welcome contributions to improve this repository and make it a valuable resou
 
 9.  **Submit the PR:** Submit the pull request, and it will be reviewed by the repository maintainers.
 
+
+## Practice Problems
+
+The practice problems are available in `Questions` folder.
+
+[Click here](Questions/Week1.md) for the Questions of Week1.<BR>
+[Click here](Questions/Week2.md) for the Questions of Week2.
+
+The folder follows the following structure:
+
+```
+questions/
+│
+├── Week1.md
+├── Week2.md
+.
+.
+```
+
+
 ## Repository File Structure
 
 To keep your work organized, we recommend following this file structure when submitting your solutions:
@@ -97,20 +117,4 @@ Your_Name/
 
 ```
 
-## Practice Problems
 
-The practice problems are available in `Questions` folder.
-
-[Click here](Questions/Week1.md) for the Questions of Week1.
-[Click here](Questions/Week2.md) for the Questions of Week2.
-
-The folder follows the following structure:
-
-```
-questions/
-│
-├── Week1.md
-├── Week2.md
-.
-.
-```
