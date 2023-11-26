@@ -1,0 +1,30 @@
+<!-- Enhance your form from Day 2 by adding JavaScript validation. Ensure that the name is not empty, and the email follows a valid format. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+</head>
+<body>
+    <h1>Registration of Agreement of Slavery :)</h1>
+    <form>
+        <input type="text" name="userName" id="userName" placeholder="Enter Name.">
+        <input type="email" name="userEmail" id="userEmail" placeholder="Enter Email">
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            if (name === '' || email === '') {
+                alert('Please fill all the fields.');
+            } else {
+                alert(`Thank you ${name} for registering with us.`);
+            }
+        });
+    </script>
+</body>
+</html>

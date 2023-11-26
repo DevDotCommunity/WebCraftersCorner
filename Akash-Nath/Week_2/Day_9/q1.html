@@ -1,0 +1,71 @@
+<!-- Write a JavaScript function that calculates the area of a rectangle (length * width). Call this function with different values and display the results. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #rectangle {
+            width: 0;
+            height: 0;
+            border: 2px solid black;
+            transition: width 0.5s, height 0.5s;
+            background-color: blueviolet;
+        }
+    </style>
+    <title>Simple Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <label for="widthInput">Width:</label>
+            <input type="number" id="widthInput" value="50">
+
+            <label for="heightInput">Height:</label>
+            <input type="number" id="heightInput" value="50">
+            <br><br>
+            <button onclick="calculateArea()">Calculate Area</button>
+            <p class="area"></p>
+        </div>
+
+        <div id="rectangle"></div>
+    </div>
+    <script>
+        function updateRectangle() {
+            const width = document.getElementById('widthInput').value + 'px';
+            const height = document.getElementById('heightInput').value + 'px';
+
+            document.getElementById('rectangle').style.width = width;
+            document.getElementById('rectangle').style.height = height;
+        }
+
+        document.getElementById('widthInput').addEventListener('input', updateRectangle);
+        document.getElementById('heightInput').addEventListener('input', updateRectangle);
+
+        // Initial update
+        updateRectangle();
+        function calculateArea(){
+            const width = document.getElementById('widthInput').value;
+            const height = document.getElementById('heightInput').value;
+
+            document.querySelector('.area').innerText = `Area of rectangle is ${width * height} square units`;
+        }
+    </script>
+</body>
+
+</html>

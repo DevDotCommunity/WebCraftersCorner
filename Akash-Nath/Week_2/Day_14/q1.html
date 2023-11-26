@@ -1,0 +1,119 @@
+<!-- Challenge participants to create a small project that incorporates HTML, CSS, and JavaScript. It could be a simple interactive webpage, a form with dynamic behavior, or a basic game. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #game-container {
+            position: relative;
+            width: 500px; 
+            height: 500px; 
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+
+        #target {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            cursor: pointer;
+            transition: left 0.5s, top 0.5s;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #timer {
+            font-size: 20px;
+        }
+    </style>
+    <title>Simple Page</title>
+</head>
+<body>
+    <h1>Click the ball</h1>
+    <div id="game-container">
+        <div id="target"></div>
+    </div>
+    <p id="score">Score: 0</p>
+    <p id="timer">Time: <span id="time-remaining">5</span> seconds</p>
+
+    <script>
+        let score = 0;
+        let timeRemaining = 5;
+        let timer;
+        let speedMultiplier = 1.5; 
+
+        function moveTarget() {
+            const gameContainer = document.getElementById('game-container');
+            const target = document.getElementById('target');
+
+            const maxX = gameContainer.clientWidth - target.clientWidth;
+            const maxY = gameContainer.clientHeight - target.clientHeight;
+
+            const newX = Math.floor(Math.random() * maxX);
+            const newY = Math.floor(Math.random() * maxY);
+
+            target.style.left = `${newX}px`;
+            target.style.top = `${newY}px`;
+        }
+
+        function increaseScore() {
+            score++;
+            document.getElementById('score').textContent = `Score: ${score}`;
+        }
+
+        function updateTimer() {
+            document.getElementById('time-remaining').textContent = timeRemaining;
+        }
+
+        function startGame() {
+            score = 0;
+            timeRemaining = 5;
+            updateTimer();
+            moveTarget();
+
+            timer = setInterval(function() {
+                timeRemaining--;
+
+                if (timeRemaining <= 0) {
+                    endGame();
+                } else {
+                    updateTimer();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            clearInterval(timer);
+            alert(`Game over! Your score is ${score}.`);
+            startGame();
+        }
+
+        document.getElementById('target').addEventListener('click', function() {
+            increaseScore();
+            moveTarget();
+            timeRemaining = 5; 
+            updateTimer();
+
+            speedMultiplier *= 1.1;
+            document.getElementById('target').style.transition = `left ${0.5 / speedMultiplier}s, top ${0.5 / speedMultiplier}s`;
+        });
+
+        startGame();
+    </script>
+</body>
+</html>
