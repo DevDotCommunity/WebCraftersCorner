@@ -1,0 +1,21 @@
+<!-- Change the content of an HTML element using JavaScript. For example, update the text of a paragraph or the source of an image dynamically. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+</head>
+<body>
+    <input type="text" name="userName" id="userName" placeholder="Enter Name" autocomplete="off">
+    <!-- <button onclick="updateName()">Update Name</button> -->
+    <p class="greetings">Hello</p>
+    <script>
+        function updateName() {
+            const name = document.getElementById('userName').value;
+            document.querySelector('.greetings').innerHTML = `Hello ${name}`;
+        }
+        document.querySelector('#userName').addEventListener('input', updateName);
+    </script>
+</body>
+</html>

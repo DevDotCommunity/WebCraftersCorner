@@ -1,0 +1,53 @@
+<!-- Create variables for the name and age. Use these variables to display a personalized greeting. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+            width: 30%;
+            /* height: 30%; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            padding: 50px 20px;
+        }
+        input, button {
+            width: 60%;
+            padding: 8px 20px;
+            outline: none;
+            margin: 2px 0;
+            background-color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="username" id="username" placeholder="Enter Name">
+        <input type="number" name="userage" id="userage" placeholder="Enter age">
+        <button onclick="greet()">Click</button>
+        <br>
+        <p class="greetings"></p>
+    </div>
+    <script>
+        let name = document.querySelector('#username');
+        let age = document.querySelector('#userage');
+        function greet(){
+            document.querySelector('.greetings').innerText = `Hi ${name.value}, I know you're ${age.value} years old :)`;
+        }
+    </script>
+</body>
+</html>
