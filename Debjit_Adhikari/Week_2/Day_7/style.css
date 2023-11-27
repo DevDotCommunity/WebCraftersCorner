@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body{
+    background-color: rgba(7, 57, 61, 0.196);
+}
+h1{
+    font-family: "Press Start 2P";
+    margin-bottom: 0;
+    text-align: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.box{
+    background-color: azure;
+    height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50vh;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+    margin-left: 25%;
+    justify-content:center;
+    align-items: center;
+
+}
+input{
+    height: 50px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 25vh;
+    font-size: 20px;
+    text-align: center;
+}
+.left .check{
+    height: 30px;
+    width: 90%;
+    border: 1px solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 24%;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    margin-bottom:10px;
+    margin-right: 0p;
+}
+button:hover{
+    background-color:rgba(128, 128, 128, 0.256);
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+.restart{
+    border: 2px solid;
+    width: 150px;
+    height: 50px;
+    font-family: "Press Start 2P";    
+    font-size: 20px;
+    border-radius: 4px; 
+}
+
+.correct{
+    background-color: rgba(6, 174, 6, 0.82);
+}
+
+@media (max-width:580px){
+    .left{
+        margin-left: 10%;
+    }
+    .right{
+        margin-right: 10px;
+    }
+    .box{
+        height: 100px;
+        width: 200px;
+    }
+    input{
+        width: 150px;
+        height: 50px;
+    }
+    .main{
+        gap: 70px;
+    }
+}
