@@ -1,0 +1,15 @@
+body{
+    background-color:blanchedalmond;
+}
+input{
+    margin-bottom: 5px;
+}
+.dimension p{
+    margin-bottom: 0px;
+}
+
+button:hover{
+    background-color: rgba(222, 184, 135, 0.589);
+    
+    border: 1px solid;
+}
