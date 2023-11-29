@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 9</title>
+</head>
+<body>
+  
+</body>
+</html>
+<body>
+  <script>
+    function calculateRectangleArea(length, width) {
+      return length * width;
+    }
+
+    const userInputLength = parseFloat(prompt('Enter the length of the rectangle:'));
+    const userInputWidth = parseFloat(prompt('Enter the width of the rectangle:'));
+
+    if (isNaN(userInputLength) || isNaN(userInputWidth)) {
+      alert('Please enter valid numbers for length and width.');
+    } else {
+      const area = calculateRectangleArea(userInputLength, userInputWidth);
+      alert('The area of the rectangle is: ' + area);
+    }
+  </script>
+</body>
+</html>
