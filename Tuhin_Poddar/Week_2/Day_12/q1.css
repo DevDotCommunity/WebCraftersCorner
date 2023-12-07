@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+/* Media query for screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Media query for screens larger than 901px */
+@media (min-width: 901px) {
+  .container {
+    width: 60%;
+  }
+}
